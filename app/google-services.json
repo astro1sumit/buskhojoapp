@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "543435312476",
+    "project_id": "buskhojo",
+    "storage_bucket": "buskhojo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543435312476:android:9bafdd3fd75154b7ec0599",
+        "android_client_info": {
+          "package_name": "com.example.sihproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFmJ0ogESAhGvd4cDfrjXndFd8PJXytFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

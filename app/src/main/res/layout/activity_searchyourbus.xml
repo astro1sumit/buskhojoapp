@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".searchyourbus">
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="350dp"
+            android:src="@drawable/menu"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search Your Bus"
+            android:id="@+id/title"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#010D30"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="80dp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/box"
+        android:backgroundTint="#D1CBCB"
+        android:drawableLeft="@drawable/baseline_send_24"
+        android:drawablePadding="10dp"
+        android:hint="Leaving from"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded,SpUsage,TextFields,TextSizeCheck,TextSizeCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/from"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/box"
+        android:backgroundTint="#D1CBCB"
+        android:drawableLeft="@drawable/baseline_fmd_good_24"
+        android:drawablePadding="10dp"
+        android:hint="Going To"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded,SpUsage,TextFields,TextSizeCheck,VisualLintTextFieldSize" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/baseline_shuffle_24"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="270dp"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/datetime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/to"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/box"
+        android:backgroundTint="#D1CBCB"
+        android:drawableLeft="@drawable/baseline_date_range_24"
+        android:drawablePadding="10dp"
+        android:hint="Date"
+        android:inputType="date"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded,SpUsage,TextSizeCheck,VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/searchbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datetime"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="#7193FA"
+            android:text="Search"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+        <ImageView
+            android:id="@+id/book"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/book"
+            android:layout_below="@id/searchbutton"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/booktext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bookings"
+            android:layout_below="@id/book"
+            android:textSize="20sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="27dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RtlHardcoded,VisualLintOverlap" />
+
+        <ImageView
+            android:id="@+id/cash"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/wallet"
+            android:layout_below="@id/searchbutton"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="20dp"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/cashtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wallet"
+            android:layout_below="@id/book"
+            android:textSize="20sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="170dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RtlHardcoded,VisualLintOverlap" />
+
+        <ImageView
+            android:id="@+id/help"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:src="@drawable/help"
+            android:layout_below="@id/searchbutton"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="20dp"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/helptext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help Center"
+            android:layout_below="@id/help"
+            android:textSize="20sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="280dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+
+    </RelativeLayout>

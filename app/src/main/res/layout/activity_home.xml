@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    tools:ignore="InvalidId">
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/menu"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BusKhojo"
+        android:id="@+id/title"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/bluish"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="140dp"
+        tools:ignore="HardcodedText,RtlHardcoded,VisualLintOverlap" />
+
+    <ImageView
+        android:id="@+id/bell"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="350dp"
+        android:src="@drawable/bell"
+        tools:ignore="RtlHardcoded"
+        android:importantForAccessibility="no" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Here....."
+        android:drawableRight="@drawable/baseline_search_24"
+        android:drawablePadding="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@id/title"
+        android:background="@drawable/box"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        tools:ignore="Autofill,HardcodedText,LabelFor,RtlHardcoded,SpeakableTextPresentCheck,TextFields,VisualLintTextFieldSize" />
+
+    <ImageView
+        android:id="@+id/ads"
+        android:layout_width="340dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/search"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/ads"
+        android:importantForAccessibility="no"
+        tools:ignore="RtlHardcoded" />
+
+
+
+
+    <TextView
+        android:id="@+id/service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our Services"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/bluish"
+        android:layout_below="@id/ads"
+        android:layout_marginLeft="29dp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bordertwo"
+        android:backgroundTint="#FFE8E7E7"
+        android:layout_below="@id/service"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        tools:ignore="RtlHardcoded">
+
+        <ImageView
+            android:id="@+id/bookbus"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_departure_board_24"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="7dp"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search your bus"
+            android:textSize="17dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/bookbus"
+            tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#E8E7E7"
+        android:layout_below="@id/service"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        tools:ignore="RtlHardcoded">
+
+        <ImageView
+            android:id="@+id/busdetails"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_directions_bus_24"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="7dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus Details"
+            android:textSize="17dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/busdetails"
+            tools:ignore="HardcodedText,NotSibling,SpUsage,TextSizeCheck" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="102dp"
+        android:layout_height="95dp"
+        android:layout_below="@id/service"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bordertwo"
+        android:backgroundTint="#FFE8E7E7"
+        tools:ignore="RtlHardcoded">
+
+        <ImageView
+            android:id="@+id/track"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/baseline_mode_of_travel_24"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_below="@id/track"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:text="Track your Bus"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,NotSibling,SpUsage,TextSizeCheck" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
